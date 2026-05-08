@@ -275,6 +275,10 @@ main {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 10px;
+  padding: 4px 12px;
+  backdrop-filter: blur(4px);
 }
 
 .aou-logo {
@@ -283,12 +287,6 @@ main {
   max-width: 180px;
   object-fit: contain;
   display: block;
-  transition: filter 0.4s ease;
-}
-
-/* Dark theme: invert logo so dark navy becomes light */
-:root[data-theme="dark"] .aou-logo {
-  filter: brightness(0) invert(1);
 }
 
 @media (min-width: 768px) {
@@ -303,11 +301,10 @@ main {
   object-fit: contain;
   margin: 0 auto 1.5rem;
   display: block;
-  transition: filter 0.4s ease;
-}
-
-:root[data-theme="dark"] .aou-logo-hero {
-  filter: brightness(0) invert(1);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  padding: 10px 20px;
+  backdrop-filter: blur(4px);
 }
 
 @media (min-width: 768px) {
