@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نشاط الذكاء الاصطناعي | النماذج الذرية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <main>
+    <h1 class="section-title">🤖 نشاط الذكاء الاصطناعي</h1>
+    <p class="text-center text-secondary mb-4">
+      تحدَّث مباشرةً مع معلِّمك الذكي، أو استخدم الـ Prompts الجاهزة لإثراء فهمك.
+    </p>
+
+    <!-- ============ AI Teacher Live Chat ============ -->
+    <h2 class="section-title" style="font-size: 1.6rem; margin-top: 1rem;">💬 المعلم الذكي للكيمياء — Live Chat</h2>
+    <p class="text-center text-secondary mb-3">
+      معلم تكيفي يطبّق التعلّم البنائي ويوجِّهك خطوة بخطوة (مدعوم بـ OpenAI GPT).
+    </p>
+
+    <div id="ai-chat-root"></div>
+
+    <hr style="border: none; border-top: 1px solid rgba(74, 158, 255, 0.18); margin: 3rem 0;" />
+
+    <!-- ============ Pre-built Prompts ============ -->
+    <h2 class="section-title" style="font-size: 1.6rem;">📋 Prompts جاهزة للنسخ</h2>
+    <p class="text-center text-secondary mb-3">
+      يمكنك أيضاً نسخ الـ Prompts التالية واستخدامها في ChatGPT أو أيّ أداة ذكاء اصطناعي.
+    </p>
+
+    <div class="card">
+      <h3>📋 طريقة الاستخدام</h3>
+      <ol style="margin-right: 1.5rem; line-height: 2;">
+        <li>اختر إحدى البطاقات الثلاث أدناه.</li>
+        <li>اضغط على زرّ <strong>"نسخ"</strong> لنسخ الـ Prompt إلى الحافظة.</li>
+        <li>افتح أداة الذكاء الاصطناعي المفضّلة (مثل ChatGPT, Gemini, Claude).</li>
+        <li>الصق الـ Prompt واضغط Enter.</li>
+        <li>تأمَّل الإجابة بعقلٍ ناقد ثم دوّن ما تعلَّمته.</li>
+      </ol>
+    </div>
+
+    <div class="prompt-card">
+      <span class="prompt-num">Prompt 1</span>
+      <h3>🌍 شرحٌ بأسلوبٍ بسيط</h3>
+      <div class="prompt-text" id="prompt-1">
+        اشرح لي بنية ذرة الكربون كأنني طالب في الصف العاشر، واستخدم تشبيهاً من الحياة اليومية.
+      </div>
+      <button class="copy-btn" data-copy="prompt-1">📋 نسخ النصّ</button>
+    </div>
+
+    <div class="prompt-card">
+      <span class="prompt-num">Prompt 2</span>
+      <h3>📖 سرد قصصي إبداعي</h3>
+      <div class="prompt-text" id="prompt-2">
+        اكتب قصة قصيرة من منظور إلكترون يحكي رحلته داخل ذرة الأكسجين.
+      </div>
+      <button class="copy-btn" data-copy="prompt-2">📋 نسخ النصّ</button>
+    </div>
+
+    <div class="prompt-card">
+      <span class="prompt-num">Prompt 3</span>
+      <h3>📊 مقارنة منظَّمة</h3>
+      <div class="prompt-text" id="prompt-3">
+        قارن لي بين نموذج بور والنموذج الكمي بأسلوب مبسط ومنظم في جدول.
+      </div>
+      <button class="copy-btn" data-copy="prompt-3">📋 نسخ النصّ</button>
+    </div>
+
+    <div class="card gold-tip">
+      <h3>🤔 تفكير ناقد قبل أن تُسلِّم بإجابة الذكاء الاصطناعي</h3>
+      <p>
+        أدوات الذكاء الاصطناعي قويّة جداً، لكنّها <strong>قابلة للخطأ</strong>. قبل أن تأخذ
+        أيّ إجابة كحقيقة، اطرح على نفسك هذه الأسئلة:
+      </p>
+      <ul style="margin-right: 1.5rem; line-height: 2;">
+        <li>هل المعلومة العلمية تتطابق مع ما درسته في هذا الدرس؟</li>
+        <li>هل ذكر الذكاء الاصطناعي مصادر موثوقة، أم اكتفى بادعاءات عامّة؟</li>
+        <li>هل التشبيه أو القصة تنقل المفهوم العلمي بدقّة، أم تبسط المفهوم لدرجة التشويه؟</li>
+        <li>هل أستطيع التحقّق من الإجابة عبر الكتاب المدرسي أو معلّمي؟</li>
+      </ul>
+      <p>
+        تذكّر: الذكاء الاصطناعي مساعدٌ وليس بديلاً عن تفكيرك أنت. إنّ <strong>التفكير الناقد</strong>
+        هو ما يحوّل الطالب من مستهلك للمعلومة إلى مُنتج للمعرفة.
+      </p>
+    </div>
+
+    <div class="card purple-card">
+      <h3>💼 توظيف هذا النشاط للهدف السادس (التقويم)</h3>
+      <p>
+        يدعم هذا النشاط <strong>الهدف السادس: تقويم أهمية النموذج الذري الحديث وإبداء رأي معلَّل</strong>.
+        فعندما تطلب من الذكاء الاصطناعي أن يقارن بين نموذج بور والنموذج الكمي، عليك أن
+        <em>تقوّم</em> دقة المقارنة بنفسك، وأن <em>تبدي رأياً</em> في أي النموذجين أكثر شموليةً —
+        وهذا في صلب مستوى التقويم في تصنيف بلوم.
+      </p>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.copy-btn').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          const targetId = btn.getAttribute('data-copy');
+          const text = document.getElementById(targetId).innerText.trim();
+          try {
+            await navigator.clipboard.writeText(text);
+            const original = btn.innerHTML;
+            btn.innerHTML = '✓ تمّ النسخ!';
+            btn.classList.add('copied');
+            setTimeout(() => {
+              btn.innerHTML = original;
+              btn.classList.remove('copied');
+            }, 2000);
+          } catch (err) {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            document.body.appendChild(ta);
+            ta.select();
+            try { document.execCommand('copy'); } catch (e) {}
+            document.body.removeChild(ta);
+            btn.innerHTML = '✓ تمّ النسخ!';
+            btn.classList.add('copied');
+            setTimeout(() => {
+              btn.innerHTML = '📋 نسخ النصّ';
+              btn.classList.remove('copied');
+            }, 2000);
+          }
+        });
+      });
+    });
+  </script>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/ai-chat.js"></script>
+  <script src="../assets/js/particles.js"></script>
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>

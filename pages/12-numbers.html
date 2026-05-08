@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>العدد الذري والكتلي | النماذج الذرية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <main>
+    <h1 class="section-title">🔢 العدد الذري والعدد الكتلي</h1>
+    <p class="text-center text-secondary mb-4">
+      كيف نقرأ بطاقة هوية أيّ ذرة؟ مرّر الفأرة فوق كلّ رقم لمعرفة دلالته.
+    </p>
+
+    <div class="card">
+      <h3>الترميز الكيميائي القياسي</h3>
+      <p class="text-secondary">
+        تُرمز الذرة عادةً بكتابة العنصر مع رقمين بجانبه: العدد الكتلي (في الأعلى) والعدد الذري (في الأسفل).
+        خذ الكربون مثالاً:
+      </p>
+      <div class="notation-display">
+        <div class="notation-numbers">
+          <span class="mass-num" data-tip="العدد الكتلي = البروتونات + النيوترونات">
+            12
+            <span class="tooltip">العدد الكتلي (A) = 12</span>
+          </span>
+          <span class="atomic-num" data-tip="العدد الذري = عدد البروتونات">
+            6
+            <span class="tooltip">العدد الذري (Z) = 6</span>
+          </span>
+        </div>
+        <span class="notation-symbol">C</span>
+      </div>
+      <p class="text-center text-secondary">عناصر الكربون: 6 بروتونات، 6 إلكترونات (في الذرة المتعادلة)، و6 نيوترونات.</p>
+    </div>
+
+    <div class="card">
+      <h3>📘 التعريفات الدقيقة</h3>
+      <ul style="margin-right: 1.5rem; line-height: 2;">
+        <li>
+          <strong>العدد الذري (Z):</strong>
+          هو عدد البروتونات في نواة الذرة، وهو الذي يُحدِّد هويّة العنصر. كلّ عنصر له عدد ذري فريد.
+        </li>
+        <li>
+          <strong>العدد الكتلي (A):</strong>
+          مجموع عدد البروتونات والنيوترونات في النواة. ويُمثّل تقريباً الكتلة الكليّة للذرة.
+        </li>
+        <li>
+          <strong>عدد النيوترونات (N):</strong>
+          يُحسب من خلال المعادلة <code>N = A − Z</code>.
+        </li>
+        <li>
+          <strong>عدد الإلكترونات:</strong>
+          يساوي عدد البروتونات في الذرة المتعادلة كهربائياً (= Z).
+        </li>
+      </ul>
+    </div>
+
+    <div class="card purple-card">
+      <h3>🧮 ثلاثة أمثلة محلولة</h3>
+
+      <h4 class="mt-2">المثال 1: ذرة الصوديوم (Na)</h4>
+      <p>إذا كان العدد الذري Z = 11 والعدد الكتلي A = 23، أوجد عدد البروتونات والنيوترونات والإلكترونات.</p>
+      <div class="code-block">
+<span class="comment"># المعطيات</span>
+Z = 11   <span class="comment">(العدد الذري)</span>
+A = 23   <span class="comment">(العدد الكتلي)</span>
+
+<span class="comment"># الحل</span>
+<span class="keyword">عدد البروتونات</span>   = Z      = <span class="value">11</span>
+<span class="keyword">عدد الإلكترونات</span> = Z      = <span class="value">11</span>
+<span class="keyword">عدد النيوترونات</span> = A − Z  = 23 − 11 = <span class="value">12</span>
+      </div>
+
+      <h4 class="mt-2">المثال 2: ذرة الأكسجين (O)</h4>
+      <p>إذا كان العدد الذري Z = 8 والعدد الكتلي A = 16، أوجد توزيع الجسيمات.</p>
+      <div class="code-block">
+<span class="comment"># المعطيات</span>
+Z = 8    <span class="comment">(العدد الذري)</span>
+A = 16   <span class="comment">(العدد الكتلي)</span>
+
+<span class="comment"># الحل</span>
+<span class="keyword">عدد البروتونات</span>   = Z      = <span class="value">8</span>
+<span class="keyword">عدد الإلكترونات</span> = Z      = <span class="value">8</span>
+<span class="keyword">عدد النيوترونات</span> = A − Z  = 16 − 8 = <span class="value">8</span>
+      </div>
+
+      <h4 class="mt-2">المثال 3: ذرة الحديد (Fe)</h4>
+      <p>إذا كان العدد الذري Z = 26 والعدد الكتلي A = 56، أوجد توزيع الجسيمات.</p>
+      <div class="code-block">
+<span class="comment"># المعطيات</span>
+Z = 26   <span class="comment">(العدد الذري)</span>
+A = 56   <span class="comment">(العدد الكتلي)</span>
+
+<span class="comment"># الحل</span>
+<span class="keyword">عدد البروتونات</span>   = Z      = <span class="value">26</span>
+<span class="keyword">عدد الإلكترونات</span> = Z      = <span class="value">26</span>
+<span class="keyword">عدد النيوترونات</span> = A − Z  = 56 − 26 = <span class="value">30</span>
+      </div>
+    </div>
+
+    <div class="card gold-tip">
+      <h3>💡 مفهوم النظائر</h3>
+      <p>
+        قد يكون لذرات نفس العنصر <strong>أعداد كتلية مختلفة</strong>! وذلك حين يكون لها العدد الذري نفسه
+        (نفس عدد البروتونات) ولكن أعداد نيوترونات مختلفة. مثال: الكربون-12 والكربون-14
+        كلاهما كربون لكنّ الثاني يحتوي نيوترونَين إضافيَّين، ويُستخدم في تحديد عمر الأحافير
+        بطريقة الكربون المُشِع. هذه الذرات تُسمّى <strong>النظائر (Isotopes)</strong>.
+      </p>
+    </div>
+  </main>
+
+  <script src="../assets/js/particles.js"></script>
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>

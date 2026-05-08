@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نموذج بور | النماذج الذرية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <main>
+    <div class="model-banner" style="--banner-start: #48bb78; --banner-end: #2f7a4d;">
+      <span class="year">1913</span>
+      <h2 class="scientist">نيلز بور</h2>
+      <p class="text-secondary">الفيزيائي الدنماركي — حائز نوبل 1922 لإسهامه في فهم بنية الذرة</p>
+    </div>
+
+    <div class="model-grid">
+      <article class="model-explanation">
+        <h3>🪐 النموذج الكمومي للمدارات</h3>
+        <p>
+          استلهم <strong>نيلز بور</strong> أفكاره من ميكانيكا الكم الناشئة آنذاك — خصوصاً من
+          نظرية ماكس بلانك حول الكمّ — ليطوِّر نموذج رذرفورد ويتجاوز إشكالياته. في عام 1913 قدّم
+          بور نموذجاً جديداً يقوم على ثلاث فرضيات أساسية، تعتمد كلها على فكرة أنّ الطاقة لا
+          تُمتصّ ولا تُنبعث إلا في حزمٍ صغيرة محدّدة (كمّات).
+        </p>
+        <p>
+          الفرضية الأولى أنّ الإلكترون يدور حول النواة في <strong>مدارات محدّدة فقط</strong>،
+          لا يمكنه أن يكون بين المدارات. الفرضية الثانية أنّ الإلكترون لا يفقد طاقة عندما يدور
+          في مدار مسموحٍ به، فيظلّ مستقرّاً بلا انهيار. الفرضية الثالثة أنّ الإلكترون يستطيع
+          الانتقال بين المدارات، وعندما ينتقل من مدارٍ أعلى إلى أدنى يطلق فوتوناً (كمّ ضوء)
+          طاقتُه تساوي فرق الطاقة بين المدارين، والعكس صحيح.
+        </p>
+        <p>
+          نجح هذا النموذج نجاحاً باهراً في تفسير <strong>الطيف الخطي للهيدروجين</strong>،
+          إذ تطابقت حسابات بور مع الطيف المرصود تجريبياً بدقّة مذهلة. ومنذ ذلك الحين
+          أصبحت كلمة "كم" جزءاً من لغة الفيزياء الذرية إلى الأبد.
+        </p>
+      </article>
+
+      <div class="model-illustration">
+        <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg" aria-label="نموذج بور - مدارات محددة">
+          <defs>
+            <radialGradient id="bohr-nucleus" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#ffd700" />
+              <stop offset="100%" stop-color="#ff8a00" />
+            </radialGradient>
+          </defs>
+          <!-- Three discrete orbits -->
+          <circle cx="140" cy="140" r="50" fill="none" stroke="#4a9eff" stroke-width="1.5" opacity="0.7" />
+          <circle cx="140" cy="140" r="80" fill="none" stroke="#9d4edd" stroke-width="1.5" opacity="0.7" />
+          <circle cx="140" cy="140" r="115" fill="none" stroke="#48bb78" stroke-width="1.5" opacity="0.7" />
+
+          <!-- Orbit labels -->
+          <text x="200" y="140" font-family="Cairo" font-size="11" fill="#4a9eff">n=1</text>
+          <text x="230" y="140" font-family="Cairo" font-size="11" fill="#9d4edd">n=2</text>
+          <text x="265" y="140" font-family="Cairo" font-size="11" fill="#48bb78">n=3</text>
+
+          <!-- Nucleus -->
+          <circle cx="140" cy="140" r="18" fill="url(#bohr-nucleus)" />
+          <text x="140" y="146" text-anchor="middle" font-family="Cairo" font-size="13" fill="#0a0e27" font-weight="700">+</text>
+
+          <!-- Electrons -->
+          <circle cx="190" cy="140" r="6" fill="#4a9eff">
+            <animateTransform attributeName="transform" type="rotate" from="0 140 140" to="360 140 140" dur="3s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="220" cy="140" r="6" fill="#9d4edd">
+            <animateTransform attributeName="transform" type="rotate" from="0 140 140" to="-360 140 140" dur="5s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="60" cy="140" r="6" fill="#9d4edd">
+            <animateTransform attributeName="transform" type="rotate" from="0 140 140" to="-360 140 140" dur="5s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="255" cy="140" r="6" fill="#48bb78">
+            <animateTransform attributeName="transform" type="rotate" from="0 140 140" to="360 140 140" dur="7s" repeatCount="indefinite" />
+          </circle>
+
+          <text x="140" y="270" text-anchor="middle" font-family="Cairo" font-size="13" fill="#a0aec0">مدارات منفصلة بطاقات محدّدة</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🔄 لماذا تطوّر هذا النموذج؟</h3>
+      <p>
+        رغم النجاح المذهل لنموذج بور مع ذرة الهيدروجين، إلا أنّه فشل عند التعامل مع ذرات
+        تحتوي على أكثر من إلكترون واحد. كذلك، لم يستطع تفسير <strong>تأثير زيمان</strong>
+        (انقسام الخطوط الطيفية في المجال المغناطيسي)، ولا الفرق بين شدّة الخطوط الطيفية.
+        ومع تقدّم ميكانيكا الكم في عشرينات القرن العشرين، اتّضح أنّ صورة المدارات الحتمية
+        ليست دقيقة، وأنّ الإلكترون يحتاج وصفاً جديداً مبنياً على الاحتمال لا اليقين.
+      </p>
+    </div>
+
+    <div class="card gold-tip">
+      <h3>💡 هل تعلم؟</h3>
+      <p>
+        نيلز بور كان يعتبر آينشتاين صديقَه ومنافسَه الفكري في آنٍ معاً. تجادلا لسنوات حول
+        تفسير ميكانيكا الكم في ما يُعرَف بـ "حوارات بور-آينشتاين"، ويُعدّ هذا الجدل العلمي
+        من أعمق ما عرفته الفيزياء في القرن العشرين.
+      </p>
+    </div>
+  </main>
+
+  <script src="../assets/js/particles.js"></script>
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>
