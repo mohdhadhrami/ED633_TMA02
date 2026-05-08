@@ -9,5 +9,5 @@
    ============================================ */
 
 window.AI_CONFIG = {
-  openaiKey: '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'
+  openaiKey: 'sk-94d6316d109b4fb4b1daed435e2c9e83'
 };
